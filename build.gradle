@@ -38,7 +38,7 @@ task one {
         }
 }*/
 
-one.dependsOn sayHello
+//one.dependsOn sayHello
 //declare task dependencies
 build.dependsOn zip
 zip.dependsOn npm_build
