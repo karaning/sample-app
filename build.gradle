@@ -26,7 +26,7 @@ task zip(type: Zip) {
 	destinationDir(file("dist"))
 	baseName "trainSchedule"
 }
-task sayHello {
+/*task sayHello {
  doLast {
    println 'Hello, World!'
         }
@@ -36,7 +36,7 @@ task one {
  doLast {
         println 'addition'
         }
-}
+}*/
 
 one.dependsOn sayHello
 //declare task dependencies
@@ -45,4 +45,4 @@ zip.dependsOn npm_build
 npm_build.dependsOn npm_test
 npm_test.dependsOn npmInstall
 npm_build.dependsOn npmInstall
-one.dependsOn sayHello
+//one.dependsOn sayHello
